@@ -6213,20 +6213,20 @@ server.
         </command>
         <command successcodes="VK_SUCCESS" errorcodes="VK_ERROR_OUT_OF_HOST_MEMORY">
             <proto><type>VkResult</type> <name>vkCreateDebugUtilsMessengerEXT</name></proto>
-            <param><type>VkInstance</type> <name>instance</name></param>
+            <param externsync="true"><type>VkInstance</type> <name>instance</name></param>
             <param>const <type>VkDebugUtilsMessengerCreateInfoEXT</type>* <name>pCreateInfo</name></param>
             <param optional="true">const <type>VkAllocationCallbacks</type>* <name>pAllocator</name></param>
             <param><type>VkDebugUtilsMessengerEXT</type>* <name>pMessenger</name></param>
         </command>
         <command>
             <proto><type>void</type> <name>vkDestroyDebugUtilsMessengerEXT</name></proto>
-            <param><type>VkInstance</type> <name>instance</name></param>
+            <param externsync="true"><type>VkInstance</type> <name>instance</name></param>
             <param externsync="true"><type>VkDebugUtilsMessengerEXT</type> <name>messenger</name></param>
             <param optional="true">const <type>VkAllocationCallbacks</type>* <name>pAllocator</name></param>
         </command>
         <command>
             <proto><type>void</type> <name>vkSubmitDebugUtilsMessageEXT</name></proto>
-            <param><type>VkInstance</type> <name>instance</name></param>
+            <param externsync="true"><type>VkInstance</type> <name>instance</name></param>
             <param><type>VkDebugUtilsMessageSeverityFlagBitsEXT</type> <name>messageSeverity</name></param>
             <param><type>VkDebugUtilsMessageTypeFlagsEXT</type> <name>messageTypes</name></param>
             <param>const <type>VkDebugUtilsMessengerCallbackDataEXT</type>* <name>pCallbackData</name></param>
